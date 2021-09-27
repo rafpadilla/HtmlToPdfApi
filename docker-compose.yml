@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  htmltopdfapi:
+    build: .
+    container_name: htmltopdfapi
+    ports:
+      - 5005:80
+    restart: unless-stopped
